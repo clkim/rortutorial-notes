@@ -1,0 +1,17 @@
+---
+layout: post
+title: Chapter 2 &nbsp; A demo app
+subtitle: It's Alive
+---
+h2. Section:
+
+h3. 2.3.5 Deploying the demo app
+  * [Typo/Clarification] Should be able to do @$>git commit -m "Finish demo app"@ instead of the
+  @$>git commit -a -m "Finish demo app"@ in the Tutorial, since had done
+  @$>git add .@ in previous step 
+  
+  * Extra credit: After finishing migration of the production database on Heroku, did following to actually run the app on Heroku
+  @$>heroku run rails server@
+  ** In browser, go to http://xxxxx-yyyyy-nnnn.herokuapp.com/users
+  *** replaced xxxxx-yyyyy-nnnn with heroku app name
+  ** It works! COOL! (Shut down the rails server with Ctrl-C)

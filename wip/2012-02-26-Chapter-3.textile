@@ -1,0 +1,30 @@
+---
+layout: post
+title: Chapter 3 Mostly static pages
+subtitle: Not Your Parents' Software Testing
+---
+Section:
+
+3.2.1 Test-driven development
+  * To get color text in cmd prompt window from RSpec, need to create a .rspec file and "download 'ansicon' from here":https://github.com/adoxa/ansicon/downloads  Get see Help, run ansicon -h from the x64 subfolder after unzipping, or read the readme.txt.
+  ** Add '--colour' (without quotes) to .rspec file in the app root.
+  ** Setting the environment variable Path to point to the x64 subfolder under where you unzip ansicon seems to work to get color output from RSpec.
+  ** But in order to work around the extraneous characters I am seeing from rspec output, I chose to do following setup
+  *** Copy the 'Command Prompt with Ruby and Rails' shortcut in Start | All Programs | RailsInstaller
+  *** In 'Shortcut' tab | 'Target:', I run ansicon before running the rest of the commands specified in Target; so Target for me looks like: <pre><code> C:\Users\<username>\<pathtoansicon>\<where_ansi150_unzipped>\x64\ansicon.exe C:\Windows\System32\cmd.exe /E:ON /K C:\RailsInstaller\Ruby1.9.2\setup_environment.bat C:\RailsInstaller </code></pre>
+  *** In 'Shortcut' tab | Start in: | I entered "C:\Sites\rails_projects\sample_app" for convenience while reading Chap 3 
+  *** In 'General' tab | I renamed shortcut 'ansicon Command Prompt with Ruby and Rails' 
+  *** "another reference":http://stackoverflow.com/questions/6324278/rspec-git-bash-windows-missing-color/9286476#9286476
+
+
+3.6.1 Eliminating bundle exec
+  * In Windows 7, doesn't work as described with  $ bin/rspec spec\  after doing $ bundle --binstub. Workaround is to set 'path' to bin directory under app root; since that path is probably not a permanent PATH item, I chose to create a User environment variable, e.g. RORAILS_sample_app_bin and gave it value of the path to the bin directory, then added %RORAILS_sample_app_bin% to the Path in User variable. Now, rspec can be run without bundle exec, with added bonus of being able to be in app root (important for workaround to see color output from RSpec) and not needing to type bin\rspec <pre><code> $ rspec spec\requests\static_pages_spec.rb </code></pre>
+
+3.6.3 Speeding up tests with Spork
+  * [Typo/Clarification] Listing 3.34 A Gemfile for the sample app seems to be missing "~>" for entry: gem 'spork', '~>0.9.0'
+  * "$ time rspec..." does not work with bundle exec rspec; on Windows, 'time' only takes arg -t to output current time, or asks for new time
+  
+  
+4.2 Rails console for learning Ruby
+  * Rails console can be accessed only from an app root, e.g. C:\Sites\rails_projects\sample_app> <pre><code> $ rails console </code></pre>
+  * Does not seem possible to change version of Ruby at this point, see Caveat in 1.2.2 Ruby / pik
