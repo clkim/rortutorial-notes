@@ -18,7 +18,7 @@ However, if you have questions or encounter issues, please see the Tutorial's [H
 ##### Convention
  `$>` denotes the Windows cmd prompt, usually in the application root directory, e.g. `C:\Sites\rails_projects\first_app>`
 
-###### More Notes to come. Enjoy...
+##### More Notes to come. Enjoy...
     
 ### Notes by Chapter in Tutorial:
 
