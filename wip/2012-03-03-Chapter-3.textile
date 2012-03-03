@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chapter 3 Mostly static pages
+title: Chapter 3  &nbsp; Mostly static pages
 subtitle: Not Your Parents' Software Testing
 ---
 Section:
