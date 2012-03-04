@@ -7,7 +7,7 @@ subtitle: Windows 7
 {% include JB/setup %}
 
 ### What are these pages?
-I am reading the [new (beta) second edition](http://ruby.railstutorial.org/) online, and using Windows 7. These are informal notes I wrote for myself as I ran into road bumps due to using Windows 7 and not a Mac. I am happy to **share them "as is,"** with the customary disclaimer that I do NOT make any REPRESENTATIONS AND WARRANTIES for these notes.
+I am reading the [new (beta) second edition](http://ruby.railstutorial.org/) online, and using Windows 7. These are informal notes I wrote for myself as I ran into road bumps mostly due to using Windows 7 and not a Mac. I am happy to **share them "as is,"** with the customary disclaimer that I do NOT make any REPRESENTATIONS AND WARRANTIES for these notes.
 
 ### Errata
 I am also happy to receive corrections and suggestions on this topic by [email to me](mailto:clkim@ieee.org).
