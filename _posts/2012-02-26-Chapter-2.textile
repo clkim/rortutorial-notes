@@ -7,8 +7,7 @@ h2. Section:
 
 h3. 2.3.5 Deploying the demo app
   * [Typo/Clarification] Should be able to do @$>git commit -m "Finish demo app"@ instead of the
-  @$>git commit -a -m "Finish demo app"@ in the Tutorial, since had done
-  @$>git add .@ in previous step 
+  @$>git commit -a -m "Finish demo app"@ in the Tutorial, since had just done in previous step @$>git add .@ 
   
   * Extra credit: After finishing migration of the production database on Heroku, did following to actually run the app on Heroku
   @$>heroku run rails server@

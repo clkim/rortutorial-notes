@@ -28,3 +28,7 @@ Section:
 4.2 Rails console for learning Ruby
   * Rails console can be accessed only from an app root, e.g. C:\Sites\rails_projects\sample_app> <pre><code> $ rails console </code></pre>
   * Does not seem possible to change version of Ruby at this point, see Caveat in 1.2.2 Ruby / pik
+  
+  
+5.3.1 Route tests
+  * [Typo] Listing 5.15 and Listing 5.19 reverts to using <pre>text: "Ruby on Rails Tutorial Sample App | Contact"</pre> instead of <pre>text: "#{base_title} | Contact"</pre>
