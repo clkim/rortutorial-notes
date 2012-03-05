@@ -3,33 +3,36 @@ layout: post
 title: Chapter 5 &nbsp; Filling in the layout
 subtitle: Details, details...
 ---
-Section:
-  
-5.3.1 Route tests
-* I had done exercise #2 in Chapter 3, Section 3.5. So, Listing 5.15 and Listing 5.19 would be <pre>text: "#{base_title} | Contact"</pre>  instead of  <pre>text: "Ruby on Rails Tutorial Sample App | Contact"</pre>
 
-5.4.2 Signup URI
+h2. Section:
+
+h3. 5.3.1 Route tests
+* [Clarification] I had done exercise #2 in Chapter 3, Section 3.5. So, Listing 5.15 and Listing 5.19 would be <code>text: "#{base_title} | Contact"</code>  instead of  <code>text: "Ruby on Rails Tutorial Sample App | Contact"</code>
+
+h3. 5.4.2 Signup URI
 Running all specs in a directory
 * Even though Windows path uses backslash when I do autocompletion of path by using 'tab', e.g.
 	@$>bundle exec rspec spec\requests\user_pages_spec.rb@ which runs ok, to run all the request specs by passing the whole directory, I had to use the forward slash, e.g.
 ** @$>bundle exec rspec spec/requests/@	- ok
-** @$>rspec spec/requests/@							- ok (with the set up in 3.6.1 Eliminating bundle exec)
+** @$>rspec spec/requests/@							- ok (with the set up in Section 3.6.1 Eliminating bundle exec)
 ** @$>bundle exec rspec spec\requests\@	- error message: ... in `block in gather_directories': too short escape sequence (ArgumentError)
 ** @$>rspec spec\requests\@							- same ArgumentError error message
 ** @$>bundle exec rspec spec\requests/@	- no tests ran: No examples found
 ** @$>rspec spec\requests/@							- no tests ran: No examples found
 ** @$>bundle exec rspec spec/@					- ok
 ** @$>rspec spec/@											- ok
-Some other command permutations:
+* Some other command permutations:
 ** @$>bundle exec rspec spec/requests@	- ok
 ** @$>rspec spec/requests@							- ok
 ** @$>bundle exec rspec spec@						- ok
-** @$>rspec spec@												- ok
+** @$>rspec spec@												- ok	
 ** @$>bundle exec rspec spec\requests@	- no tests ran: No examples found
 ** @$>rspec spec\requests@							- no tests ran: No examples found
 * Running @$>bundle exec rake spec@ at this point in Tutorial produces error message: C:/Sites/rails_projects/sample_app/db/schema.rb doesn't exist yet. Run `rake db:migrate` to create it then try again. ...
 * [Typo] The 'Sign up' page styling at this point is not what is shown in Figure 5.10. but is similar to styling in Figure 5.9.
-* 5.4.3 Had to update Gemfile to use latest point release instead of fixed 'i.j.k' version of following gems
+
+h3. 5.4.3 Deploying to production with Blueprint
+* Had to update Gemfile to use latest point release instead of fixed 'i.j.k' version of following gems
 ** gem 'sass-rails',   '~>3.2.3'
 ** gem 'coffee-rails', '~>3.2.2'
 ** gem 'jquery-rails', '~>2.0.0'	
