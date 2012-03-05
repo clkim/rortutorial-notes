@@ -1,0 +1,11 @@
+---
+layout: post
+title: Chapter 4 &nbsp; Rails-flavored Ruby
+subtitle: The Jewel in the Crown
+---
+Section:
+  
+4.2 Rails console for learning Ruby
+  * Rails console can be accessed only from an app root, e.g. C:\Sites\rails_projects\sample_app> <pre><code> $ rails console </code></pre>
+  * Does not seem possible to change version of Ruby at this point, see Caveat in 1.2.2 Ruby / pik
+  

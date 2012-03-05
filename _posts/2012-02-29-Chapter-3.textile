@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chapter 3  &nbsp; Mostly static pages
+title: Chapter 3 &nbsp; Mostly static pages
 subtitle: Not Your Parents' Software Testing
 ---
 Section:
@@ -24,11 +24,3 @@ Section:
   * [Typo/Clarification] Listing 3.34 A Gemfile for the sample app seems to be missing "~>" for entry: gem 'spork', '~>0.9.0'
   * "$ time rspec..." does not work with bundle exec rspec; on Windows, 'time' only takes arg -t to output current time, or asks for new time
   
-  
-4.2 Rails console for learning Ruby
-  * Rails console can be accessed only from an app root, e.g. C:\Sites\rails_projects\sample_app> <pre><code> $ rails console </code></pre>
-  * Does not seem possible to change version of Ruby at this point, see Caveat in 1.2.2 Ruby / pik
-  
-  
-5.3.1 Route tests
-  * I had done exercise #2 in Chap 3, Section 3.5. So, Listing 5.15 and Listing 5.19 should be <pre>text: "#{base_title} | Contact"</pre>  instead of  <pre>text: "Ruby on Rails Tutorial Sample App | Contact"</pre> 
